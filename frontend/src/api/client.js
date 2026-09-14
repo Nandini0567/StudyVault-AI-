@@ -3,7 +3,10 @@ import axios from "axios";
 // Use same-origin /api proxy during Vite dev or fallback to IPv4 127.0.0.1:8000
 // const API_BASE = (typeof window !== "undefined" && window.location.port === "5173") ? "/api" : "http://127.0.0.1:8000/api";
 const API_BASE = "https://studyvault-ai-production-504f.up.railway.app/api";
+// <<<<<<< HEAD
 
+// =======
+// >>>>>>> f52c574 (Connect frontend to Railway backend)
 const api = axios.create({
   baseURL: API_BASE,
   headers: {
