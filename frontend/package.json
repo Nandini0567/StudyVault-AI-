@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --port 5173 --host",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0 --allowed-host studyvault-ai-production.up.railway.app"
+    "preview": "serve -s dist -l $PORT"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -14,7 +14,8 @@
     "axios": "^1.7.9",
     "lucide-react": "^0.468.0",
     "clsx": "^2.1.1",
-    "tailwind-merge": "^2.5.5"
+    "tailwind-merge": "^2.5.5",
+    "serve": "^14.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
