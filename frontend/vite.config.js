@@ -19,8 +19,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: ['studyvault-ai-production.up.railway.app']
+  },
   preview: {
     host: '0.0.0.0',
-    allowedHosts: true
+    allowedHosts: ['studyvault-ai-production.up.railway.app']
   }
 })
