@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --port 5173 --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --host 0.0.0.0 --allowed-host studyvault-ai-production.up.railway.app"
   },
   "dependencies": {
     "react": "^18.3.1",
